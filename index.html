@@ -8,5 +8,104 @@
 <title>CV</title>
 </head>
 <body>
+    <h2>Denis Avdizba</h2>
+    <hr>
+    <h3>Contact info</h3> 
+    <hr>
+    <div>
+        <ul>
+            <li><b>Phone number:</b> +79188540327</li>
+            <li><b>E-mail:</b> denisavdizba@mail.ru</li>
+            <li><b>Discord:</b> Corvian (GMT+3)#8349</li>
+        </ul>
+    </div>
+    <h3>About me:</h3>
+    <hr>
+    <div>
+        <p>
+                Graduate student from Sukhum, Abkhazia.  <br>
+                Moved to Taganrog, Russia, to study IT at ETA SFEDU.  <br>
+                My goal is to learn frontend web development and I spend quite some of my free time studying.   <br>
+                I worked as a teacher in SmartLab children school of robotics and programming. I was teaching basic HTML and CSS.  <br>
+                I am always up to learn new things, open-minded and determined to accomplish all my goals. I always enjoy new acquiantances and like to teach people new skills.
+        </p>
+    </div>
+    <h3>My skills</h3>
+    <hr>
+    <div>
+         <ul>
+             <li>Front-end
+                 <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Basic JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>SASS</li>
+                    <li>React (in progress)</li>
+                 </ul>
+             </li>
+             <li>Infrastructure
+                <ul>
+                    <li>Git</li>
+                </ul>
+            </li>
+            <li>IDE
+                <ul>
+                    <li>VSCode</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <h3>Code example</h3>
+    <hr>
+    <div>
+        <b>Human Readable Time</b><br>
+        <i>This function converts given number of seconds to HH:mm:ss format.</i><br>
+        <code>
+            <pre>
+                function huma/pre>nReadable (seconds) {
+                let hours = Math.floor(seconds/3600);
+                let minutes = Math.floor(seconds/60);
+                while(seconds >=60){
+                    seconds -= 60;
+                }
+                while (minutes >= 60){
+                    minutes -= 60;
+                }
+                hours > 9 ? hours = String(hours) : hours = "0" + String(hours);
+                minutes > 9 ? minutes = String(minutes) : minutes = "0" + String(minutes);
+                seconds > 9 ? seconds = String(seconds) : seconds = "0" + String(seconds);
+                return `${hours}`+":"+`${minutes}`+":"+`${seconds}`;
+                }
+            </pre>
+        </code>
+    </div>
+
+    <h3>My projects</h3>
+    <hr>
+    <div>
+        <a href="https://github.com/corvusfortis/todo_js">Javascript ToDo App (WIP)</a>
+    </div>
+    <h3>Education</h3>
+    <hr>
+    <div>
+        <ul>
+            <li><b>University:</b>  ETA SFEDU, Informational technologies and communication systems master</li>
+            <li><b>Complited Courses:</b>
+                <ul>
+                    <li><b>Stepik:</b> Javascript for beginners</li>
+                    <li><b>FreeCodeCamp:</b> Responsive Web Design, Javascript Algorithms and Data Structures</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <h3>Languages</h3>
+    <hr>
+    <div>
+        <ul>
+            <li><b>Russian:</b> Native speaker  </li>
+            <li><b>English:</b> B1 (Intermediate)</li>
+        </ul>
+    </div>
 </body>
 </html>
