@@ -1,111 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles.css">
-<title>CV</title>
-</head>
-<body>
-    <h2>Denis Avdizba</h2>
-    <hr>
-    <h3>Contact info</h3> 
-    <hr>
-    <div>
-        <ul>
-            <li><b>Phone number:</b> +79188540327</li>
-            <li><b>E-mail:</b> denisavdizba@mail.ru</li>
-            <li><b>Discord:</b> Corvian (GMT+3)#8349</li>
-        </ul>
-    </div>
-    <h3>About me:</h3>
-    <hr>
-    <div>
-        <p>
-                Graduate student from Sukhum, Abkhazia.  <br>
-                Moved to Taganrog, Russia, to study IT at ETA SFEDU.  <br>
-                My goal is to learn frontend web development and I spend quite some of my free time studying.   <br>
-                I worked as a teacher in SmartLab children school of robotics and programming. I was teaching basic HTML and CSS.  <br>
-                I am always up to learn new things, open-minded and determined to accomplish all my goals. I always enjoy new acquiantances and like to teach people new skills.
-        </p>
-    </div>
-    <h3>My skills</h3>
-    <hr>
-    <div>
-         <ul>
-             <li>Front-end
-                 <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Basic JavaScript</li>
-                    <li>Bootstrap</li>
-                    <li>SASS</li>
-                    <li>React (in progress)</li>
-                 </ul>
-             </li>
-             <li>Infrastructure
-                <ul>
-                    <li>Git</li>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>CV</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <style> @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); </style>
+    </head>
+    <body>
+        <header class="header container">
+            <img src="photo.jpg" alt="My photo">
+            <h1>Denis Avdizba</h1>
+            <hr>
+            <nav class="nav">
+                <ul class="nav-list">
+                  <li class="nav-item"><a href="#contact-info" class="nav-link">Contact Info</a></li>
+                  <li class="nav-item"><a href="#about-me" class="nav-link">About me</a></li>
+                  <li class="nav-item"><a href="#my-skills" class="nav-link">My Skills</a></li>
+                  <li class="nav-item"><a href="#code-example" class="nav-link">Code example</a></li>
+                  <li class="nav-item"><a href="#my-projects" class="nav-link">My projects</a></li>
+                  <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                  <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
                 </ul>
-            </li>
-            <li>IDE
-                <ul>
-                    <li>VSCode</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <h3>Code example</h3>
-    <hr>
-    <div>
-        <b>Human Readable Time</b><br>
-        <i>This function converts given number of seconds to HH:mm:ss format.</i><br>
-        <code>
-            <pre>
-                function huma/pre>nReadable (seconds) {
-                let hours = Math.floor(seconds/3600);
-                let minutes = Math.floor(seconds/60);
-                while(seconds >=60){
-                    seconds -= 60;
-                }
-                while (minutes >= 60){
-                    minutes -= 60;
-                }
-                hours > 9 ? hours = String(hours) : hours = "0" + String(hours);
-                minutes > 9 ? minutes = String(minutes) : minutes = "0" + String(minutes);
-                seconds > 9 ? seconds = String(seconds) : seconds = "0" + String(seconds);
-                return `${hours}`+":"+`${minutes}`+":"+`${seconds}`;
-                }
-            </pre>
-        </code>
-    </div>
-
-    <h3>My projects</h3>
-    <hr>
-    <div>
-        <a href="https://github.com/corvusfortis/todo_js">Javascript ToDo App (WIP)</a>
-    </div>
-    <h3>Education</h3>
-    <hr>
-    <div>
-        <ul>
-            <li><b>University:</b>  ETA SFEDU, Informational technologies and communication systems master</li>
-            <li><b>Complited Courses:</b>
-                <ul>
-                    <li><b>Stepik:</b> Javascript for beginners</li>
-                    <li><b>FreeCodeCamp:</b> Responsive Web Design, Javascript Algorithms and Data Structures</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <h3>Languages</h3>
-    <hr>
-    <div>
-        <ul>
-            <li><b>Russian:</b> Native speaker  </li>
-            <li><b>English:</b> B1 (Intermediate)</li>
-        </ul>
-    </div>
-</body>
+              </nav>
+        </header>
+        <main class="main container main-container">
+            <section id="contact-info">
+                <h2 class="section-title">Contact info</h2> 
+                <hr>
+                <div class="container">
+                    <ul>
+                        <li><b>Phone number:</b> +79188540327</li>
+                        <li><b>E-mail:</b> denisavdizba@mail.ru</li>
+                        <li><b>Discord:</b> Corvian (GMT+3)#8349</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="about-me">
+                <h2 class="section-title">About me:</h2>
+                <hr>
+                <div class="container">
+                    <p>
+                            Graduate student from Sukhum, Abkhazia.
+                            Moved to Taganrog, Russia, to study IT at ETA SFEDU. 
+                            My goal is to learn frontend web development and I spend quite some of my free time studying. 
+                            I worked as a teacher in SmartLab children school of robotics and programming. c
+                            I was teaching basic HTML and CSS.
+                            I am always up to learn new things, open-minded and determined to accomplish all my goals.
+                            I always enjoy new acquiantances and like to teach people new skills.
+                    </p>
+                </div>
+            </section>
+            <section id="my-skills">
+                <h2 class="section-title">My skills</h2>
+                <hr>
+                <div class="container">
+                    <ul>
+                        <li>Front-end
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Basic JavaScript</li>
+                                <li>Bootstrap</li>
+                                <li>SASS</li>
+                                <li>React (in progress)</li>
+                            </ul>
+                        </li>
+                        <li>Infrastructure
+                            <ul>
+                                <li>Git</li>
+                            </ul>
+                        </li>
+                        <li>IDE
+                            <ul>
+                                <li>VSCode</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+             </section>
+            <section id="code-example">
+                <h2 class="section-title">Code example</h2>
+                <hr>
+                <div class="container">
+                    <p>
+                        <b>Human Readable Time</b><br>
+                        <i>This function converts given number of seconds to HH:mm:ss format.</i>
+                    </p>
+                    <code>
+                            function huma/pre>nReadable (seconds) {<br>
+                            let hours = Math.floor(seconds/3600);<br>
+                            let minutes = Math.floor(seconds/60);<br>
+                            while(seconds >=60){<br>
+                                seconds -= 60;<br>
+                            }<br>
+                            while (minutes >= 60){<br>
+                                minutes -= 60;<br>
+                            }<br>
+                            hours > 9 ? hours = String(hours) : hours = "0" + String(hours);<br>
+                            minutes > 9 ? minutes = String(minutes) : minutes = "0" + String(minutes);<br>
+                            seconds > 9 ? seconds = String(seconds) : seconds = "0" + String(seconds);<br>
+                            return `${hours}`+":"+`${minutes}`+":"+`${seconds}`;<br>
+                            }
+                    </code>
+                </div>
+            </section>
+            <section id="my-projects">
+                <h2 class="section-title">My projects</h2>
+                <hr>
+                <div class="container">
+                    <a href="https://github.com/corvusfortis/todo_js">Javascript ToDo App (WIP)</a>
+                </div>
+            </section>
+            <section id="education">
+                <h2 class="section-title">Education</h2>
+                <hr>
+                <div class="container">
+                    <ul>
+                        <li><b>University:</b>  ETA SFEDU, Informational technologies and communication systems master</li>
+                        <li><b>Complited Courses:</b>
+                            <ul>
+                                <li><b>Stepik:</b> Javascript for beginners</li>
+                                <li><b>FreeCodeCamp:</b> Responsive Web Design, Javascript Algorithms and Data Structures</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="languages">
+                <h2 class="section-title">Languages</h2>
+                <hr>
+                <div class="container">
+                    <ul>
+                        <li><b>Russian:</b> Native speaker  </li>
+                        <li><b>English:</b> B1 (Intermediate)</li>
+                    </ul>
+                </div>
+            </section>
+         </main>
+        <footer class="footer container">
+            <img src="https://rs.school/images/rs_school_js.svg" alt="RSS logo">
+            <ul class="footer-list">
+                <li><a href="https://github.com/corvusfortis">Github</a></li>
+                <li><a href="https://rs.school/js/">JavaScript/Front-end</a></li>
+                <li>2022</li>
+             </ul>
+        </footer>
+    </body>
 </html>
