@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>CV</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <style> @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); </style>
+    </head>
+    <body>
+        
+        <header class="header">
+            <div class="container header-container">
+            <nav class="nav">
+                <ul class="nav-list">
+                  <li class="nav-item"><a href="#contact-info" class="nav-link">Contact Info</a></li>
+                  <li class="nav-item"><a href="#about-me" class="nav-link">About me</a></li>
+                  <li class="nav-item"><a href="#my-skills" class="nav-link">My Skills</a></li>
+                  <li class="nav-item"><a href="#code-example" class="nav-link">Code example</a></li>
+                  <li class="nav-item"><a href="#my-projects" class="nav-link">My projects</a></li>
+                  <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                  <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+                </ul>
+              </nav>
+              
+        </div>
+        </header>
+        <main class="main">
+            <div class="container main-container">
+                <div class="img-section">
+                    <img src="photo.jpg" alt="My photo" class="my-photo">
+                </div>
+            <section class="name-section">
+                <h1 class="name-header">Denis Avdizba</h1>
+                <span class="subheader">Web-development enthusiast</span>
+            </section>
+            <section id="contact-info" class="cv-section">
+                <h2 class="section-title">Contact info</h2> 
+                
+                    <ul>
+                        <li><b>Phone number:</b> +79188540327</li>
+                        <li><b>E-mail:</b> denisavdizba@mail.ru</li>
+                        <li><b>Discord:</b> Corvian (GMT+3)#8349</li>
+                    </ul>
+            </section>
+            <section id="about-me" class="cv-section">
+                <h2 class="section-title">About me:</h2>
+                    <ul>
+                        <li>Graduate student</li>
+                        <li>Former HTML/CSS teacher for children</li>
+                        <li>Web development enthusiast</li>
+                        <li>Quick learner</li>
+                        <li>Open-minded</li>
+                        <li>Determined to achieve goals</li>
+                        <li>Enjoy teaching</li>
+                    </ul>
+            </section>
+            <section id="my-skills" class="cv-section">
+                <h2 class="section-title">My skills</h2>
+                    <ul>
+                        <li>Front-end
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Basic JavaScript</li>
+                                <li>Bootstrap</li>
+                                <li>SASS</li>
+                                <li>React (in progress)</li>
+                            </ul>
+                        </li>
+                        <li>Infrastructure
+                            <ul>
+                                <li>Git</li>
+                            </ul>
+                        </li>
+                        <li>IDE
+                            <ul>
+                                <li>VSCode</li>
+                            </ul>
+                        </li>
+                    </ul>
+             </section>
+            <section id="code-example" class="cv-section">
+                <h2 class="section-title">Code example</h2>
+                    <p>
+                        <b>Human Readable Time</b><br>
+                        <i>This function converts given number of seconds to HH:mm:ss format.</i>
+                    </p>
+                        <ul class="code-list">
+                        <li>
+                            function humanReadable (seconds) {
+                                <ul>
+                                <li>let hours = Math.floor(seconds/3600);</li>
+                                <li>let minutes = Math.floor(seconds/60);</li>
+                                <li>
+                                    while(seconds >=60){
+                                    <ul>
+                                    <li>seconds -= 60;</li>
+                                    </ul>
+                                </li>
+                                <li>}</li>
+                                 <li>
+                                    <li>while (minutes >= 60){
+                                 <ul>
+                                    <li>minutes -= 60;</li>
+                                </ul>
+                            </li>
+                                <li>}</li>
+                                <li>hours > 9 ? hours = String(hours) : hours = "0" + String(hours);</li>
+                                <li>minutes > 9 ? minutes = String(minutes) : minutes = "0" + String(minutes);</li>
+                                <li>seconds > 9 ? seconds = String(seconds) : seconds = "0" + String(seconds);</li>
+                                <li>return `${hours}`+":"+`${minutes}`+":"+`${seconds}`;</li>
+                                </ul> 
+                            </li>
+                            <li>}</li>
+                        </ul>
+            </section>
+            <section id="my-projects" class="cv-section">
+                <h2 class="section-title">My projects</h2>
+                    <a href="https://github.com/corvusfortis/todo_js">Javascript ToDo App (WIP)</a>
+            </section>
+            <section id="education" class="cv-section">
+                <h2 class="section-title">Education</h2>
+                    <ul>
+                        <li><b>University:</b>  ETA SFEDU, Informational technologies and communication systems master</li>
+                        <li><b>Complited Courses:</b>
+                            <ul>
+                                <li><b>Stepik:</b> Javascript for beginners</li>
+                                <li><b>FreeCodeCamp:</b> Responsive Web Design, Javascript Algorithms and Data Structures</li>
+                            </ul>
+                        </li>
+                    </ul>
+            </section>
+            <section id="languages" class="cv-section">
+                <h2 class="section-title">Languages</h2>
+                    <ul>
+                        <li><b>Russian:</b> Native speaker  </li>
+                        <li><b>English:</b> B1 (Intermediate)</li>
+                    </ul>
+            </section>
+         </div>
+         </main>
+        <footer class="footer">
+            <div class="container footer-container">
+            <ul class="footer-list">
+                <li class="footer-item"><b>2022</b></li>
+                <li class="footer-item"><a href="https://github.com/corvusfortis">Github</a></li>
+                <li class="footer-item"><a href="https://rs.school/js/">JavaScript/Front-end</a></li>
+                <li class="footer-item"><img src="https://rs.school/images/rs_school_js.svg" alt="RSS logo" height="60" width="90"></li>
+             </ul>
+            </div>
+        </footer>
+    </body>
+</html>
